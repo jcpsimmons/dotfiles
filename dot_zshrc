@@ -248,3 +248,5 @@ alias cdg="cd ~/Documents/github"
 
 
 alias nv="nvim"
+
+export HOMEBREW_NO_AUTO_UPDATE="true"
