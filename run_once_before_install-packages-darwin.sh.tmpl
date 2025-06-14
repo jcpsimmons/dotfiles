@@ -1,0 +1,40 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+brew "pandoc"
+brew "ponysay"
+brew "poetry"
+brew "deno"
+brew "bun"
+brew "chezmoi"
+brew "ffmpeg"
+brew "ripgrep"
+brew "rsync"
+brew "fzf"
+brew "gh"
+brew "http-server"
+brew "nvm"
+brew "tmux"
+brew "typst"
+brew "watch"
+brew "yt-dlp"
+brew "jq"
+brew "go"
+brew "htop"
+brew "python3"
+brew "tree"
+brew "git"
+
+cask "obsidian"
+cask "little-snitch"
+cask "raycast"
+cask "rectangle"
+cask "wezterm"
+cask "gpg-suite"
+cask "basictex"
+cask "vlc"
+cask "blackhole-2ch"
+
+EOF
+{{ end -}}
+
