@@ -1,6 +1,11 @@
 -- ============================================================================
 -- FORMATTING PLUGINS
 -- ============================================================================
+-- In VSCode, use VSCode's formatting - minimal conform setup for terminal mode
+if vim.g.vscode then
+    return {}
+end
+
 return {{
     "stevearc/conform.nvim",
     lazy = false,

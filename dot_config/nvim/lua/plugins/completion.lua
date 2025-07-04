@@ -1,6 +1,11 @@
 -- ============================================================================
 -- COMPLETION PLUGINS
 -- ============================================================================
+-- Don't load completion plugins in VSCode - let VSCode handle completion
+if vim.g.vscode then
+    return {}
+end
+
 return {{
     "hrsh7th/nvim-cmp",
     event = "InsertEnter",

@@ -1,6 +1,11 @@
 -- ============================================================================
 -- DASHBOARD
 -- ============================================================================
+-- Don't load dashboard in VSCode - VSCode has its own welcome screen
+if vim.g.vscode then
+    return {}
+end
+
 return {{
     "goolord/alpha-nvim",
     dependencies = {"nvim-tree/nvim-web-devicons", "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim"},

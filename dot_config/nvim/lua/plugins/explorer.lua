@@ -1,6 +1,11 @@
 -- ============================================================================
 -- FILE EXPLORER
 -- ============================================================================
+-- Don't load file explorer in VSCode - use VSCode's native explorer
+if vim.g.vscode then
+    return {}
+end
+
 return {{
     "nvim-neo-tree/neo-tree.nvim",
     version = "*",

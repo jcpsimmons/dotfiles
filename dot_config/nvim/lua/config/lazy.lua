@@ -30,27 +30,3 @@ require("lazy").setup("plugins", {
         }
     }
 })
-
--- ============================================================================
--- WORK CONFIGURATION
--- ============================================================================
-local home = os.getenv("HOME")
-local workconfig_path = home .. "/.config/nvim/workconfig.lua"
-
--- Check if the workconfig.lua file exists
-local file_exists = function(path)
-    local f = io.open(path, "r")
-    if f then
-        f:close()
-        return true
-    end
-    return false
-end
-
-if file_exists(workconfig_path) then
-    WorkConfig = dofile(workconfig_path)
-    if WorkConfig and WorkConfig.codeium_server_config then
-        WorkConfig.codeium_server_config()
-    end
-    -- Note: Plugin config loading is now handled by lazy.nvim's plugin discovery
-end
