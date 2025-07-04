@@ -38,12 +38,14 @@ This is a modular Neovim configuration organized for maintainability and clarity
 ## Plugin Categories
 
 ### Core Configuration
+
 - **options.lua**: Global vim settings, UI options, editor behavior
 - **keymaps.lua**: Key mappings for navigation, diagnostics, and general use
 - **autocmds.lua**: Autocommands for highlighting yanked text and TypeScript formatting
 - **lazy.lua**: Lazy.nvim setup and plugin loading configuration
 
 ### Plugin Modules
+
 - **essential.lua**: Essential plugins like vim-sleuth for auto-indentation
 - **writing.lua**: Writing and focus plugins (Goyo, Pencil, Stay-centered)
 - **terminal.lua**: Terminal integration with Floaterm
