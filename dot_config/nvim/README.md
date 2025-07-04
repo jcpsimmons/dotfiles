@@ -1,6 +1,14 @@
-# 🚀 Comprehensive NeoVim Configuration
+# 🚀 The DrJ NeoVim Configuration
 
-A powerful, modular Neovim configuration that seamlessly operates in both terminal and VSCode environments. This configuration combines the best of both worlds: VSCode's language intelligence with Neovim's superior text editing capabilities.
+A brief history:
+1. I started with neovim configured with [nvim.kickstart](https://github.com/nvim-lua/kickstart.nvim)
+2. Over the past two years I've had specific needs come up and shaped the editor to my liking - specifically for writing essays and coding webapps
+3. I recently used llms to modularize what was until recently a GARGANTUAN single init.lua file that configured everything
+
+Enjoy
+
+- DrJ
+
 
 ## 📋 Table of Contents
 
